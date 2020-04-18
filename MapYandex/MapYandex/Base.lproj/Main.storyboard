@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapYandex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgL-so-FHn" customClass="YMKMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-1L-gbo">
+                                <rect key="frame" x="0.0" y="782" width="414" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qUR-tV-OzF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="TFN-Fl-5I3">
+                                <rect key="frame" x="187" y="428" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="CD5-OP-k4M"/>
+                                    <constraint firstAttribute="height" constant="40" id="vrC-C3-eax"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGc-77-vKZ">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.30553644610000003" green="0.62850967639999999" blue="0.32492792250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="637-fe-yZ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBtnDirectios:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEn-GB-n0j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8t-BA-fZS">
+                                <rect key="frame" x="20" y="44.5" width="50" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="E36-iu-DEK"/>
+                                    <constraint firstAttribute="width" constant="50" id="quN-Bv-2cO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="xmark.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="cleanMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRw-Ha-1Ky"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D8t-BA-fZS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1JO-zM-pEV"/>
+                            <constraint firstItem="FgL-so-FHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3hO-DE-uMn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qGc-77-vKZ" secondAttribute="bottom" id="5PW-Wx-cDM"/>
+                            <constraint firstAttribute="bottom" secondItem="FgL-so-FHn" secondAttribute="bottom" id="6cm-kF-uJ9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qGc-77-vKZ" secondAttribute="trailing" id="8IZ-Go-9tk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FgL-so-FHn" secondAttribute="trailing" id="Cy8-ga-XW6"/>
+                            <constraint firstItem="FgL-so-FHn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G80-gx-dpP"/>
+                            <constraint firstItem="TFN-Fl-5I3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UEa-Ad-EXd"/>
+                            <constraint firstItem="qGc-77-vKZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zdg-tK-mX2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vWt-1L-gbo" secondAttribute="trailing" id="oHU-R7-4cz"/>
+                            <constraint firstItem="TFN-Fl-5I3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qaY-r1-MRe"/>
+                            <constraint firstItem="qGc-77-vKZ" firstAttribute="top" secondItem="vWt-1L-gbo" secondAttribute="bottom" id="r8f-GX-gOF"/>
+                            <constraint firstItem="vWt-1L-gbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sea-Ap-x1D"/>
+                            <constraint firstItem="D8t-BA-fZS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yIF-io-DTG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="vWt-1L-gbo" id="3sl-HO-GZ4"/>
+                        <outlet property="mapView" destination="FgL-so-FHn" id="Dyq-P0-9Uj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pin" width="256" height="256"/>
+        <image name="xmark.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

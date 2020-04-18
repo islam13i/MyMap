@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D9680DCE4D3C6B0F85322FD /* Pods_MapYandex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BFEC0EC2E77DDDA072DE11 /* Pods_MapYandex.framework */; };
+		45D210FF2447785500EDDD15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D210FE2447785500EDDD15 /* AppDelegate.swift */; };
+		45D211012447785500EDDD15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D211002447785500EDDD15 /* SceneDelegate.swift */; };
+		45D211032447785500EDDD15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D211022447785500EDDD15 /* ViewController.swift */; };
+		45D211062447785500EDDD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D211042447785500EDDD15 /* Main.storyboard */; };
+		45D211082447785600EDDD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D211072447785600EDDD15 /* Assets.xcassets */; };
+		45D2110B2447785600EDDD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D211092447785600EDDD15 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BFEC0EC2E77DDDA072DE11 /* Pods_MapYandex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapYandex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D210FB2447785500EDDD15 /* MapYandex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapYandex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D210FE2447785500EDDD15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45D211002447785500EDDD15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45D211022447785500EDDD15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45D211052447785500EDDD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45D211072447785600EDDD15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45D2110A2447785600EDDD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45D2110C2447785600EDDD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9711CD09A6A99D93C6EF66F5 /* Pods-MapYandex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapYandex.release.xcconfig"; path = "Target Support Files/Pods-MapYandex/Pods-MapYandex.release.xcconfig"; sourceTree = "<group>"; };
+		9FBA443E3C0A7D0169130947 /* Pods-MapYandex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapYandex.debug.xcconfig"; path = "Target Support Files/Pods-MapYandex/Pods-MapYandex.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45D210F82447785500EDDD15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9680DCE4D3C6B0F85322FD /* Pods_MapYandex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45192CC3244A4A7B00D67C00 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45D211022447785500EDDD15 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		45D210F22447785500EDDD15 = {
+			isa = PBXGroup;
+			children = (
+				45D210FD2447785500EDDD15 /* MapYandex */,
+				45D210FC2447785500EDDD15 /* Products */,
+				A98CC86F29FAFFA501B28138 /* Pods */,
+				F012D2C88B8ADB8680AD0E2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45D210FC2447785500EDDD15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45D210FB2447785500EDDD15 /* MapYandex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45D210FD2447785500EDDD15 /* MapYandex */ = {
+			isa = PBXGroup;
+			children = (
+				45192CC3244A4A7B00D67C00 /* ViewControllers */,
+				45D210FE2447785500EDDD15 /* AppDelegate.swift */,
+				45D211002447785500EDDD15 /* SceneDelegate.swift */,
+				45D211042447785500EDDD15 /* Main.storyboard */,
+				45D211072447785600EDDD15 /* Assets.xcassets */,
+				45D211092447785600EDDD15 /* LaunchScreen.storyboard */,
+				45D2110C2447785600EDDD15 /* Info.plist */,
+			);
+			path = MapYandex;
+			sourceTree = "<group>";
+		};
+		A98CC86F29FAFFA501B28138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FBA443E3C0A7D0169130947 /* Pods-MapYandex.debug.xcconfig */,
+				9711CD09A6A99D93C6EF66F5 /* Pods-MapYandex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F012D2C88B8ADB8680AD0E2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04BFEC0EC2E77DDDA072DE11 /* Pods_MapYandex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45D210FA2447785500EDDD15 /* MapYandex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D2110F2447785600EDDD15 /* Build configuration list for PBXNativeTarget "MapYandex" */;
+			buildPhases = (
+				6D48F74E7A3E1F6A6DCA6322 /* [CP] Check Pods Manifest.lock */,
+				45D210F72447785500EDDD15 /* Sources */,
+				45D210F82447785500EDDD15 /* Frameworks */,
+				45D210F92447785500EDDD15 /* Resources */,
+				7FF89A6A6513FBCA168B3542 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapYandex;
+			productName = MapYandex;
+			productReference = 45D210FB2447785500EDDD15 /* MapYandex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45D210F32447785500EDDD15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Islam;
+				TargetAttributes = {
+					45D210FA2447785500EDDD15 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 45D210F62447785500EDDD15 /* Build configuration list for PBXProject "MapYandex" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45D210F22447785500EDDD15;
+			productRefGroup = 45D210FC2447785500EDDD15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45D210FA2447785500EDDD15 /* MapYandex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45D210F92447785500EDDD15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D2110B2447785600EDDD15 /* LaunchScreen.storyboard in Resources */,
+				45D211082447785600EDDD15 /* Assets.xcassets in Resources */,
+				45D211062447785500EDDD15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D48F74E7A3E1F6A6DCA6322 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapYandex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FF89A6A6513FBCA168B3542 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapYandex/Pods-MapYandex-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapYandex/Pods-MapYandex-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapYandex/Pods-MapYandex-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45D210F72447785500EDDD15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D211032447785500EDDD15 /* ViewController.swift in Sources */,
+				45D210FF2447785500EDDD15 /* AppDelegate.swift in Sources */,
+				45D211012447785500EDDD15 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45D211042447785500EDDD15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D211052447785500EDDD15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45D211092447785600EDDD15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D2110A2447785600EDDD15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45D2110D2447785600EDDD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45D2110E2447785600EDDD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45D211102447785600EDDD15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBA443E3C0A7D0169130947 /* Pods-MapYandex.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U63823ANYA;
+				INFOPLIST_FILE = MapYandex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = islam.MapYandex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45D211112447785600EDDD15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9711CD09A6A99D93C6EF66F5 /* Pods-MapYandex.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U63823ANYA;
+				INFOPLIST_FILE = MapYandex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = islam.MapYandex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45D210F62447785500EDDD15 /* Build configuration list for PBXProject "MapYandex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D2110D2447785600EDDD15 /* Debug */,
+				45D2110E2447785600EDDD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D2110F2447785600EDDD15 /* Build configuration list for PBXNativeTarget "MapYandex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D211102447785600EDDD15 /* Debug */,
+				45D211112447785600EDDD15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45D210F32447785500EDDD15 /* Project object */;
+}
