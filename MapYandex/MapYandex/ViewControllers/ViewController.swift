@@ -29,27 +29,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLocationManager()
-        checkLocationAuthorization()
+        // setupLocationManager()
+        checkLocationServices()
     }
     
     func centerViewOnUserLocation() {
+        
+        mapView.mapWindow.map.isRotateGesturesEnabled = false
         if let location = YMKLocationManager.lastKnownLocation()?.position {
+            let yLocation = YMKPoint(latitude: location.latitude, longitude: location.longitude)
+            mapView.mapWindow.map.move(with:
+                YMKCameraPosition(target: yLocation, zoom: 14, azimuth: 0, tilt: 0))
+            mapView.mapWindow.map.addTapListener(with: self)
+            mapView.mapWindow.map.addCameraListener(with: self)
             
-            mapView.mapWindow.map.isRotateGesturesEnabled = false
-            let mapKit = YMKMapKit.sharedInstance()
-            
-            if userLocationLayer == nil{
-                userLocationLayer = mapKit.createUserLocationLayer(with: mapView.mapWindow)
-                userLocationLayer.setVisibleWithOn(true)
-                userLocationLayer.isHeadingEnabled = true
-                let yLocation = YMKPoint(latitude: location.latitude, longitude: location.longitude)
-                mapView.mapWindow.map.move(with:
-                    YMKCameraPosition(target: yLocation, zoom: 14, azimuth: 0, tilt: 0))
-                mapView.mapWindow.map.addTapListener(with: self)
-                mapView.mapWindow.map.addCameraListener(with: self)
-                userLocationLayer.setObjectListenerWith(self)
-            }
         }
     }
     
@@ -58,9 +51,21 @@ class ViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
+    func setupUserLocationListener() {
+        let mapKit = YMKMapKit.sharedInstance()
+        
+        if userLocationLayer == nil{
+            userLocationLayer = mapKit.createUserLocationLayer(with: mapView.mapWindow)
+            userLocationLayer.setVisibleWithOn(true)
+            userLocationLayer.isHeadingEnabled = true
+            userLocationLayer.setObjectListenerWith(self)
+        }
+    }
+    
     func checkLocationServices() {
+        setupLocationManager()
+        setupUserLocationListener()
         if CLLocationManager.locationServicesEnabled() {
-            setupLocationManager()
             checkLocationAuthorization()
         } else {
             locationManager.requestWhenInUseAuthorization()
@@ -115,12 +120,12 @@ class ViewController: UIViewController {
         let mapObjects = mapView.mapWindow.map.mapObjects
         mapObjects.clear()
         mapObjects.addPlacemark(with: directonLocation!, image: #imageLiteral(resourceName: "pin"), style: YMKIconStyle(anchor: CGPoint(x: 0.5, y: 0.5) as NSValue,
-                    rotationType: YMKRotationType.rotate.rawValue as NSNumber,
-                    zIndex: 2,
-                    flat: true,
-                    visible: true,
-                    scale: 0.15,
-                    tappableArea: nil))
+                                                                                                                        rotationType: YMKRotationType.rotate.rawValue as NSNumber,
+                                                                                                                        zIndex: 2,
+                                                                                                                        flat: true,
+                                                                                                                        visible: true,
+                                                                                                                        scale: 0.15,
+                                                                                                                        tappableArea: nil))
         
         for route in routes {
             mapObjects.addPolyline(with: route.geometry).strokeColor = generateRandomColor()
@@ -241,7 +246,7 @@ extension ViewController: YMKMapCameraListener, YMKLayersGeoObjectTapListener{
         
         guard let obj = searchResult.obj else { return }
         addressLabel.text = obj.name ?? ""
-
+        
     }
     
     func onSearchError(_ error: Error) {
